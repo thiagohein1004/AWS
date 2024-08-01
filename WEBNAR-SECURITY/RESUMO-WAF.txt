@@ -1,0 +1,40 @@
+O AWS WAF (Web Application Firewall) é um serviço que ajuda a proteger aplicações web contra ataques comuns na web que podem afetar a disponibilidade da aplicação, comprometer a segurança ou consumir recursos excessivos. O AWS WAF permite definir regras personalizadas que filtram tráfego indesejado antes que ele chegue à sua aplicação.
+
+## Principais Funcionalidades do AWS WAF:
+
+1. **Filtros Baseados em Regras**: Permite criar regras personalizadas para permitir, bloquear ou monitorar (count) o tráfego com base em condições como endereços IP, cabeçalhos HTTP, strings específicas, e mais.
+   
+2. **Managed Rules**: Oferece conjuntos de regras gerenciadas por AWS ou terceiros, que são constantemente atualizadas para proteger contra as ameaças mais recentes sem a necessidade de manutenção manual.
+
+3. **Proteção em Tempo Real**: Analisa o tráfego em tempo real e aplica as regras configuradas para proteger suas aplicações contra ataques conhecidos e padrões de tráfego suspeitos.
+
+4. **Escalabilidade**: Integrado com outros serviços da AWS, como Amazon CloudFront e Application Load Balancer (ALB), para fornecer proteção em escala global com baixa latência.
+
+5. **Logs e Monitoramento**: Fornece capacidades de logging detalhado que podem ser integradas com Amazon CloudWatch e AWS CloudTrail para monitoramento contínuo e análise de segurança.
+
+## Tipos de Proteção e Ataques que o AWS WAF Trabalha:
+
+1. **Ataques de Injeção**:
+   - **SQL Injection (SQLi)**: Bloqueia tentativas de injeção de SQL que podem ser usadas para comprometer o banco de dados subjacente de uma aplicação web.
+   - **Cross-Site Scripting (XSS)**: Detecta e bloqueia scripts maliciosos que podem ser injetados em páginas web para afetar os usuários.
+
+2. **Ataques de DDoS (Denial of Service)**:
+   - **Flood de Solicitações HTTP**: Protege contra tentativas de sobrecarregar a aplicação com um grande volume de solicitações HTTP.
+   - **Ataques de Saturação de Recursos**: Bloqueia padrões de tráfego que visam esgotar os recursos da aplicação, como memória ou capacidade de processamento.
+
+3. **Bots e Scrapers**:
+   - **Bots Maliciosos**: Identifica e bloqueia bots que tentam acessar a aplicação para fins maliciosos, como scraping de conteúdo ou execução de ações automatizadas.
+   - **Scraping de Conteúdo**: Protege contra tentativas de extração de conteúdo de sites de maneira não autorizada.
+
+4. **Bloqueio por IP e Geolocalização**:
+   - **Endereços IP Suspeitos**: Permite criar listas de controle de acesso baseadas em endereços IP conhecidos ou suspeitos.
+   - **Bloqueio por Geolocalização**: Filtra tráfego com base na localização geográfica dos endereços IP de origem, permitindo bloquear ou restringir acessos de determinadas regiões.
+
+5. **Proteção contra Vulnerabilidades Comuns**:
+   - **OWASP Top 10**: Ajuda a mitigar as principais vulnerabilidades listadas no OWASP Top 10, como Cross-Site Request Forgery (CSRF) e File Inclusion.
+
+6. **Regras Personalizadas**:
+   - **Filtros de URL**: Permite bloquear ou permitir tráfego com base em padrões de URL específicos.
+   - **Análise de Cabeçalhos HTTP**: Inspeciona e age com base nos cabeçalhos HTTP de solicitações e respostas.
+
+O AWS WAF é uma ferramenta poderosa para fortalecer a segurança de aplicações web ao proteger contra uma ampla variedade de ameaças e ataques. Ele permite uma abordagem flexível e customizável para segurança, ajudando a manter a integridade, disponibilidade e confidencialidade das aplicações web.

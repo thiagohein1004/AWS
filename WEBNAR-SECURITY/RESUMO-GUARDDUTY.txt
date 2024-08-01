@@ -1,0 +1,36 @@
+GuardDuty
+
+O Amazon GuardDuty é um serviço de detecção de ameaças que monitora continuamente atividades maliciosas e comportamento não autorizado para proteger suas contas da AWS, workloads e dados armazenados no Amazon S3. Ele utiliza machine learning, análise comportamental e integração com inteligência de ameaças para identificar atividades suspeitas ou maliciosas.
+
+## Principais Funcionalidades do GuardDuty:
+
+1. **Monitoramento Contínuo**: Analisa dados de fontes como CloudTrail (logs de gerenciamento e eventos de S3), VPC Flow Logs e DNS logs para detectar atividades anômalas.
+   
+2. **Detecção de Ameaças**: Identifica comportamentos que podem indicar comprometimento de contas, como atividades de contas comprometidas, e acessos suspeitos a instâncias EC2, buckets S3, e outras infraestruturas da AWS.
+
+3. **Integração com Inteligência de Ameaças**: Utiliza dados de fontes de inteligência de ameaças, como AWS Security Hub, CrowdStrike, e outras, para fornecer detecções mais precisas.
+
+4. **Alertas e Remediação**: Gera alertas que podem ser integrados com outras ferramentas de segurança e automação para resposta rápida e remediação. As detecções são categorizadas por nível de severidade (baixo, médio, alto).
+
+## Tipos de Proteção e Ataques Detectados:
+
+1. **Comprometimento de Conta**: Atividades que indicam que uma conta da AWS pode ter sido comprometida, como uso de chaves de API a partir de localizações geográficas inesperadas ou acessos fora do horário usual.
+
+2. **Atividade Maliciosa**:
+   - **Mineração de Criptomoeda**: Detecção de atividades relacionadas à mineração de criptomoedas que utilizam os recursos da AWS sem autorização.
+   - **Malware**: Identificação de comportamento que pode indicar a presença de malware nas instâncias EC2 ou em buckets S3.
+
+3. **Acesso Não Autorizado**:
+   - **Tentativas de Escalação de Privilégios**: Tentativas de obter acesso a recursos ou informações sensíveis além do que foi concedido.
+   - **Acesso Incomum a Buckets S3**: Detecção de acessos incomuns ou potencialmente não autorizados aos dados armazenados no S3.
+
+4. **Ataques de Rede**:
+   - **Scans de Porta**: Atividades de escaneamento de portas em suas instâncias EC2, que podem indicar tentativas de reconhecimento ou descoberta de serviços vulneráveis.
+   - **Denial of Service (DoS)**: Tentativas de sobrecarregar seus recursos da AWS com tráfego malicioso.
+
+5. **Atividades Anômalas**:
+   - **Anomalias de Tráfego de Rede**: Comportamento incomum no tráfego de rede que pode indicar compromissos ou configurações incorretas.
+   - **Modificações Inesperadas em Configurações**: Mudanças inesperadas nas configurações de segurança, como alterações em grupos de segurança ou políticas de IAM.
+
+O GuardDuty ajuda a manter a segurança das infraestruturas na AWS ao detectar e alertar sobre potenciais ameaças e vulnerabilidades de maneira proativa, permitindo que os administradores tomem medidas preventivas ou corretivas rapidamente.
+

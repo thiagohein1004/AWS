@@ -1,0 +1,44 @@
+O AWS Shield é um serviço de proteção contra ataques DDoS (Distributed Denial of Service) que oferece duas camadas de defesa: AWS Shield Standard e AWS Shield Advanced. Ele é projetado para proteger aplicações e recursos hospedados na AWS contra uma ampla gama de ataques DDoS, garantindo alta disponibilidade e resiliência.
+
+## Principais Funcionalidades do AWS Shield:
+
+### AWS Shield Standard:
+1. **Proteção Automática e Gratuita**: Disponível para todos os clientes da AWS sem custo adicional. Oferece proteção contínua contra os ataques DDoS mais comuns.
+2. **Mitigação de Ataques Comuns**: Protege contra ataques na camada de rede (camada 3) e na camada de transporte (camada 4), como ataques de UDP reflection e SYN/ACK floods.
+
+### AWS Shield Advanced:
+1. **Proteção Avançada e Personalizada**: Fornece mitigação adicional e mais sofisticada para ataques DDoS complexos. Disponível mediante assinatura.
+2. **Detecção e Mitigação Avançadas**: Utiliza algoritmos avançados para detectar e mitigar ataques DDoS complexos, incluindo aqueles que visam a camada de aplicação (camada 7).
+3. **Assistência 24/7 do DRT (DDoS Response Team)**: Acesso a uma equipe de resposta a incidentes DDoS que oferece suporte durante e após ataques.
+4. **Relatórios de Ataque**: Fornece relatórios detalhados sobre ataques, incluindo tipo, volume, origem e mitigação.
+5. **Reembolso de Custos Relacionados a Tráfego DDoS**: Cobertura para custos adicionais de escalabilidade da AWS causados por ataques DDoS.
+
+## Tipos de Proteção e Ataques que o AWS Shield Trabalha:
+
+### AWS Shield Standard:
+1. **Ataques na Camada de Rede (Camada 3)**:
+   - **Ataques de Volume**: Como ataques de amplificação (por exemplo, DNS amplification) e floods de pacotes que tentam consumir a largura de banda disponível.
+   - **Ataques de Protocolo**: Como SYN/ACK floods que visam exaurir recursos de servidores, firewalls e outros dispositivos de rede.
+
+2. **Ataques na Camada de Transporte (Camada 4)**:
+   - **UDP Floods**: Envio massivo de pacotes UDP para sobrecarregar a capacidade de resposta do servidor.
+   - **Reflection Attacks**: Uso de servidores intermediários para amplificar o tráfego enviado à vítima, como NTP reflection e SSDP reflection.
+
+### AWS Shield Advanced:
+1. **Ataques na Camada de Aplicação (Camada 7)**:
+   - **HTTP Floods**: Solicitações HTTP excessivas destinadas a sobrecarregar a aplicação web.
+   - **Ataques de Baixo Volume e Alta Frequência**: Ataques que tentam explorar vulnerabilidades específicas da aplicação enviando pequenas quantidades de tráfego malicioso.
+
+2. **Ataques de Camada Combinada**:
+   - **Ataques Multi-Vetor**: Combina múltiplos tipos de ataque (camadas 3, 4 e 7) para tentar contornar medidas de defesa.
+   - **Ataques Complexos e Persistentes**: Ataques que utilizam padrões de tráfego variáveis e sofisticados para evadir detecção e mitigação automatizadas.
+
+3. **Proteção de Recursos Específicos**:
+   - **Elastic Load Balancers (ELB)**: Protege balanceadores de carga contra sobrecarga de tráfego.
+   - **Amazon CloudFront e Route 53**: Protege serviços de entrega de conteúdo e DNS contra ataques volumétricos e de aplicação.
+
+4. **Monitoramento e Alerta**:
+   - **Monitoramento Contínuo**: Observa continuamente o tráfego e detecta atividades suspeitas.
+   - **Alertas Proativos**: Notifica os administradores sobre potenciais ataques e ações de mitigação em tempo real.
+
+O AWS Shield é uma camada crítica de segurança para qualquer infraestrutura na AWS, especialmente para aplicações que necessitam de alta disponibilidade e resiliência contra interrupções causadas por ataques DDoS. Ele garante que os serviços permaneçam operacionais e minimiza o impacto dos ataques na experiência do usuário final.

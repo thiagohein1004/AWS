@@ -1,0 +1,41 @@
+O AWS Systems Manager é um serviço que facilita o gerenciamento e a automação de operações na infraestrutura da AWS. Ele oferece uma interface centralizada para monitorar, gerenciar e automatizar tarefas administrativas em grande escala, ajudando a garantir a segurança e a conformidade dos ambientes de TI.
+
+## Principais Funcionalidades do AWS Systems Manager:
+
+1. **Inventário e Configuração**:
+   - **Inventário**: Coleta informações detalhadas sobre os recursos, como instâncias EC2, RDS, S3, e mantém um registro atualizado das configurações desses recursos.
+   - **Gerenciamento de Configuração**: Ajuda a garantir que todos os recursos estejam configurados de acordo com as políticas e padrões definidos pela organização.
+
+2. **Automação de Tarefas**:
+   - **Run Command**: Executa comandos de gerenciamento remotos em suas instâncias sem a necessidade de acessar individualmente cada uma delas.
+   - **Automations**: Cria fluxos de trabalho automatizados para tarefas repetitivas, como a criação de snapshots de backup, aplicação de patches, e atualizações de software.
+
+3. **Gerenciamento de Patch**:
+   - **Patch Manager**: Automatiza o processo de aplicação de patches de segurança e atualizações de software em instâncias EC2, garantindo que os sistemas estejam sempre atualizados e seguros.
+
+4. **Gerenciamento de Estado**:
+   - **State Manager**: Define, aplica e mantém estados de configuração desejados em seus recursos, garantindo que eles estejam sempre em conformidade com as políticas da empresa.
+
+5. **Gerenciamento de Parâmetros**:
+   - **Parameter Store**: Armazena dados de configuração e segredos, como strings de conexão de banco de dados e credenciais, de forma segura e centralizada.
+
+6. **Monitoramento e Log**:
+   - **CloudWatch Integration**: Integra-se com o Amazon CloudWatch para monitoramento e registro de logs, permitindo visualizar o estado de saúde dos recursos e receber alertas em caso de problemas.
+
+7. **Documentos e Scripts**:
+   - **Documentos SSM**: Cria e gerencia documentos SSM (scripts) para automatizar operações de gerenciamento, como a execução de comandos, automações e patching.
+
+8. **Gerenciamento de Aplicativos**:
+   - **AppConfig**: Implanta e gerencia a configuração de aplicativos de forma centralizada, reduzindo o risco de erros de configuração.
+
+## Benefícios do AWS Systems Manager:
+
+1. **Centralização**: Oferece uma única interface para gerenciar todos os seus recursos da AWS, facilitando o gerenciamento de grandes ambientes.
+
+2. **Automação**: Reduz a necessidade de intervenções manuais, automatizando tarefas comuns e complexas.
+
+3. **Segurança e Conformidade**: Ajuda a manter a segurança e a conformidade aplicando patches e configurações consistentes em todos os recursos.
+
+4. **Eficiência Operacional**: Melhora a eficiência operacional, permitindo aos administradores focarem em tarefas de maior valor ao automatizar processos repetitivos.
+
+O AWS Systems Manager é uma ferramenta essencial para administradores de sistemas e DevOps que buscam simplificar o gerenciamento de infraestrutura, aumentar a eficiência e garantir que os ambientes estejam sempre seguros e em conformidade com as políticas organizacionais.

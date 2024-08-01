@@ -1,0 +1,37 @@
+O AWS Security Hub é um serviço de gerenciamento de segurança que fornece uma visão abrangente do seu estado de segurança na AWS. Ele agrega, organiza e prioriza alertas de segurança (achados) de vários serviços da AWS, como Amazon GuardDuty, Amazon Inspector e AWS Macie, bem como de parceiros de segurança. Além disso, oferece recomendações práticas para melhorar a segurança e conformidade de sua infraestrutura na nuvem.
+
+## Principais Funcionalidades do AWS Security Hub:
+
+1. **Agregação de Alertas de Segurança**:
+   - **Coleta de Dados**: Integra-se com outros serviços de segurança da AWS e ferramentas de parceiros para coletar e centralizar achados de segurança.
+   - **Painel Centralizado**: Fornece um painel unificado onde você pode visualizar e gerenciar todos os alertas de segurança em um único lugar.
+
+2. **Avaliação Contínua de Conformidade**:
+   - **Benchmarks de Conformidade**: Avalia continuamente os recursos da AWS em relação a padrões de conformidade como CIS AWS Foundations Benchmark, PCI DSS, GDPR, entre outros.
+   - **Relatórios de Conformidade**: Gera relatórios que destacam os recursos que estão fora de conformidade e fornece recomendações para corrigir os problemas.
+
+3. **Priorização de Alertas**:
+   - **Classificação de Severidade**: Classifica e prioriza os achados de segurança com base em sua gravidade, ajudando a focar nos problemas mais críticos.
+   - **Insights**: Oferece insights baseados em tendências e padrões observados nos achados de segurança, auxiliando na identificação de áreas de risco.
+
+4. **Automação e Remediação**:
+   - **Integração com AWS Config**: Pode usar AWS Config para corrigir automaticamente desvios de conformidade.
+   - **Ações Automatizadas**: Configura ações automatizadas para responder a alertas de segurança, como isolamento de instâncias comprometidas ou bloqueio de IPs maliciosos.
+
+5. **Visualização e Análise**:
+   - **Painéis Personalizáveis**: Permite criar painéis customizados para visualizar métricas e tendências específicas de segurança.
+   - **Filtro e Pesquisa**: Ferramentas de filtro e pesquisa avançadas para analisar achados específicos e investigar incidentes de segurança.
+
+6. **Integração com Parceiros de Segurança**:
+   - **Ferramentas de Terceiros**: Integra-se com uma ampla variedade de soluções de segurança de parceiros para ampliar as capacidades de detecção e resposta a ameaças.
+   - **APIs e Webhooks**: Usa APIs e webhooks para integrar com sistemas de gestão de eventos e informações de segurança (SIEM) e outras ferramentas de segurança personalizadas.
+
+## Benefícios do AWS Security Hub:
+
+1. **Visibilidade Centralizada**: Proporciona uma visão unificada de todos os achados de segurança, facilitando a gestão e a resposta a ameaças.
+2. **Melhoria Contínua**: Ajuda a identificar e corrigir vulnerabilidades e desvios de conformidade de forma contínua.
+3. **Automação de Segurança**: Automatiza a resposta a incidentes e a correção de problemas de conformidade, reduzindo a carga de trabalho manual.
+4. **Redução de Riscos**: Ajuda a priorizar os problemas mais críticos, permitindo uma abordagem mais eficaz para mitigação de riscos.
+5. **Facilitação de Auditorias**: Gera relatórios detalhados que ajudam a demonstrar conformidade com regulamentos e padrões de segurança.
+
+O AWS Security Hub é uma ferramenta poderosa para centralizar e simplificar a gestão de segurança na AWS, ajudando as organizações a manterem seus ambientes seguros e em conformidade com as melhores práticas e regulamentos de segurança.

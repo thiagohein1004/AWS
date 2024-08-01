@@ -1,0 +1,33 @@
+O AWS Config é um serviço que permite avaliar, auditar e monitorar as configurações dos recursos da AWS de forma contínua. Ele fornece uma visão detalhada das configurações dos recursos da AWS em sua conta e permite rastrear suas alterações ao longo do tempo. O AWS Config ajuda a garantir conformidade e segurança, além de facilitar a auditoria e solução de problemas.
+
+## Principais Funcionalidades do AWS Config:
+
+1. **Inventário de Recursos**: Mantém um inventário de todos os recursos da AWS em sua conta, incluindo suas configurações e relacionamentos.
+
+2. **Rastreamento de Mudanças**: Monitora e registra alterações nas configurações dos recursos da AWS, permitindo a visualização do histórico de mudanças.
+
+3. **Avaliação de Conformidade**: Compara as configurações dos recursos com políticas de conformidade definidas pelo usuário para identificar desvios e não conformidades.
+
+4. **Alertas e Notificações**: Gera notificações quando ocorrem alterações que não estão em conformidade com as políticas estabelecidas, permitindo ações corretivas imediatas.
+
+5. **Relatórios de Conformidade**: Fornece relatórios detalhados sobre o estado de conformidade dos recursos, facilitando auditorias e inspeções de segurança.
+
+## Tipos de Proteção e Ataques que o AWS Config Trabalha:
+
+1. **Garantia de Conformidade**:
+   - **Políticas de Segurança**: Verifica se os recursos estão configurados de acordo com as políticas de segurança, como grupos de segurança apropriados, regras de firewall, e criptografia de dados.
+   - **Políticas de Governança**: Assegura que os recursos estejam em conformidade com normas internas e externas, como GDPR, HIPAA, e outras regulamentações.
+
+2. **Detecção de Configurações Vulneráveis**:
+   - **Abertura de Portas e Protocolos**: Identifica configurações de grupos de segurança que permitem tráfego desnecessário ou não autorizado.
+   - **Permissões de IAM**: Verifica se as políticas de IAM são excessivamente permissivas ou se estão configuradas corretamente.
+
+3. **Monitoramento de Alterações Suspeitas**:
+   - **Mudanças de Configuração Não Autorizadas**: Detecta e alerta sobre alterações de configuração que podem indicar tentativas de comprometimento ou uso indevido de recursos.
+   - **Desvios de Padrões de Configuração**: Identifica desvios em relação às configurações padrão ou aprovadas, como alterações em instâncias EC2, buckets S3, ou regras de roteamento de rede.
+
+4. **Auditoria e Análise Pós-Incidente**:
+   - **Histórico de Configuração**: Fornece um histórico completo de todas as alterações de configuração para facilitar a análise de incidentes de segurança.
+   - **Correlação de Eventos**: Permite correlacionar alterações de configuração com eventos de segurança para identificar a origem e o impacto de incidentes.
+
+O AWS Config é essencial para manter uma postura de segurança proativa na AWS, garantindo que todas as configurações estejam em conformidade com as melhores práticas e políticas de segurança da organização. Ele ajuda a prevenir ataques através da identificação de configurações vulneráveis e permite uma resposta rápida e eficaz a incidentes de segurança.
