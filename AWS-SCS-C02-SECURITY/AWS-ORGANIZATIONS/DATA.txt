@@ -1,0 +1,6 @@
+User IAM Principal
+arn:aws:iam::493399344742:user/thiagomagalhaes
+
+Assumed Role conta dev sync
+arn:aws:iam::022499029031:role/AssumeRoleSyncSTIDEV
+

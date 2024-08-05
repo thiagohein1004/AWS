@@ -1,0 +1,48 @@
+O custo do AWS GuardDuty é baseado em dois componentes principais: a quantidade de dados processados para detecção de ameaças e a quantidade de eventos analisados. Aqui está um detalhamento dos custos:
+
+### 1. **Detecção de Ameaças Baseada em Logs**
+
+#### **Logs de VPC Flow, DNS e CloudTrail:**
+- **Primeiros 500 MB de dados analisados por mês:** Gratuito.
+- **Após os primeiros 500 MB:**
+  - $4.00 por 1 milhão de eventos do CloudTrail analisados.
+  - $1.00 por GB de dados do VPC Flow Logs analisados.
+  - $1.00 por GB de dados do DNS Logs analisados.
+
+### 2. **Detecção de Ameaças Baseada em Eventos**
+
+#### **Eventos do CloudTrail:**
+- **Primeiros 2,000,000 eventos por conta por mês:** Gratuito.
+- **Após os primeiros 2,000,000 eventos:**
+  - $4.00 por 1 milhão de eventos analisados.
+
+### 3. **Exemplo de Custos Mensais**
+
+#### **Exemplo 1:**
+- **VPC Flow Logs:** 10 GB analisados por mês.
+  - Custo: (10 GB - 0.5 GB gratuitos) * $1.00 = $9.50
+- **DNS Logs:** 5 GB analisados por mês.
+  - Custo: (5 GB - 0.5 GB gratuitos) * $1.00 = $4.50
+- **CloudTrail Logs:** 3,000,000 eventos analisados por mês.
+  - Custo: (3,000,000 eventos - 2,000,000 gratuitos) * $4.00 / 1,000,000 eventos = $4.00
+
+#### **Total do Exemplo 1:**
+  - $9.50 (VPC Flow Logs) + $4.50 (DNS Logs) + $4.00 (CloudTrail Logs) = $18.00 por mês.
+
+#### **Exemplo 2:**
+- **VPC Flow Logs:** 100 GB analisados por mês.
+  - Custo: (100 GB - 0.5 GB gratuitos) * $1.00 = $99.50
+- **DNS Logs:** 50 GB analisados por mês.
+  - Custo: (50 GB - 0.5 GB gratuitos) * $1.00 = $49.50
+- **CloudTrail Logs:** 10,000,000 eventos analisados por mês.
+  - Custo: (10,000,000 eventos - 2,000,000 gratuitos) * $4.00 / 1,000,000 eventos = $32.00
+
+#### **Total do Exemplo 2:**
+  - $99.50 (VPC Flow Logs) + $49.50 (DNS Logs) + $32.00 (CloudTrail Logs) = $181.00 por mês.
+
+### 4. **Calculadora de Custos**
+
+Para uma estimativa mais precisa baseada no seu uso específico, você pode usar a [Calculadora de Preços da AWS](https://calculator.aws/#/).
+
+### Conclusão
+Os custos do AWS GuardDuty podem variar significativamente com base no volume de dados processados e eventos analisados. As taxas iniciais gratuitas ajudam a avaliar o serviço sem incorrer em custos imediatos, mas é importante monitorar o uso contínuo para evitar surpresas nos custos mensais.
