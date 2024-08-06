@@ -1,0 +1,66 @@
+Apontar um CNAME no Amazon Route 53 para dois endpoints pode ser feito de duas maneiras principais: usando um balanceador de carga (como o Application Load Balancer ou Network Load Balancer) ou utilizando registros de failover ou weighted (ponderados) para distribuir o tráfego entre os dois endpoints. Vou descrever ambos os métodos.
+
+### Método 1: Usar um Balanceador de Carga
+
+A maneira mais simples e comum é usar um balanceador de carga, que pode distribuir o tráfego entre múltiplos endpoints.
+
+1. **Configure um Load Balancer:**
+   - Crie um Application Load Balancer (ALB) ou Network Load Balancer (NLB) no AWS.
+   - Adicione os endpoints como instâncias de destino no grupo de destino do Load Balancer.
+   - Configure regras de roteamento e políticas de saúde conforme necessário.
+
+2. **Configurar o CNAME no Route 53:**
+   - No console do Route 53, vá para "Hosted zones" e selecione a zona hospedada desejada.
+   - Clique em "Create Record Set".
+   - No campo "Name", insira o nome do subdomínio (por exemplo, `www`).
+   - Selecione o tipo "CNAME".
+   - No campo "Alias", selecione "Yes".
+   - No campo "Alias Target", selecione o Load Balancer configurado anteriormente.
+   - Salve as alterações.
+
+### Método 2: Usar Registros Ponderados ou de Failover no Route 53
+
+Se você quiser distribuir o tráfego diretamente entre dois endpoints sem um balanceador de carga, pode usar registros ponderados ou de failover.
+
+#### Usando Registros Ponderados (Weighted):
+
+1. **Criar Registros Ponderados:**
+   - No console do Route 53, vá para "Hosted zones" e selecione a zona hospedada desejada.
+   - Clique em "Create Record Set".
+   - No campo "Name", insira o nome do subdomínio (por exemplo, `www`).
+   - Selecione o tipo "CNAME".
+   - No campo "Alias", selecione "No".
+   - No campo "Value", insira o primeiro endpoint (por exemplo, `endpoint1.example.com`).
+   - Em "Routing Policy", selecione "Weighted".
+   - Defina o "Weight" (por exemplo, 50 se você quiser distribuir o tráfego igualmente).
+   - Opcionalmente, configure um "Set ID" para identificar o registro.
+   - Salve as alterações.
+   
+   - Repita o processo para o segundo endpoint, definindo um peso apropriado (por exemplo, 50 para distribuição igual).
+
+2. **Resultados:**
+   - O Route 53 distribuirá o tráfego entre os dois endpoints com base nos pesos configurados.
+
+#### Usando Registros de Failover:
+
+1. **Criar Registros de Failover:**
+   - No console do Route 53, vá para "Hosted zones" e selecione a zona hospedada desejada.
+   - Clique em "Create Record Set".
+   - No campo "Name", insira o nome do subdomínio (por exemplo, `www`).
+   - Selecione o tipo "CNAME".
+   - No campo "Alias", selecione "No".
+   - No campo "Value", insira o primeiro endpoint (por exemplo, `primary-endpoint.example.com`).
+   - Em "Routing Policy", selecione "Failover".
+   - Configure o registro como "Primary" e configure as verificações de saúde apropriadas.
+   - Salve as alterações.
+
+   - Repita o processo para o segundo endpoint, mas configure este registro como "Secondary" e configure as verificações de saúde apropriadas.
+
+2. **Resultados:**
+   - O Route 53 direcionará o tráfego para o endpoint primário enquanto ele estiver saudável. Se a verificação de saúde falhar, o Route 53 redirecionará o tráfego para o endpoint secundário.
+
+### Conclusão
+
+A melhor abordagem depende do seu caso de uso específico. Usar um balanceador de carga (Método 1) é geralmente mais simples e oferece mais funcionalidades, como balanceamento de carga inteligente e verificações de saúde integradas. Usar registros ponderados ou de failover (Método 2) é uma solução mais direta se você deseja distribuir tráfego ou ter uma configuração de alta disponibilidade sem um balanceador de carga adicional.
+
+Escolha a abordagem que melhor se adapta às suas necessidades operacionais e arquitetônicas.

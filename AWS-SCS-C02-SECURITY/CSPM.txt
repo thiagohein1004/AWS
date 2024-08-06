@@ -1,0 +1,59 @@
+CSPM (Cloud Security Posture Management) é uma categoria de soluções de segurança que ajudam as organizações a gerenciar e melhorar a postura de segurança de suas infraestruturas de nuvem. As ferramentas de CSPM monitoram continuamente os recursos em nuvem para garantir que estejam configurados de acordo com as melhores práticas de segurança e conformidade. 
+
+### Funcionalidades Principais do CSPM
+
+1. **Monitoramento Contínuo:**
+   - CSPM oferece monitoramento contínuo dos recursos de nuvem para identificar e corrigir configurações incorretas que possam introduzir riscos de segurança.
+
+2. **Avaliação de Conformidade:**
+   - As soluções de CSPM verificam a conformidade com normas e regulamentos de segurança, como GDPR, HIPAA, PCI-DSS, NIST, e outras. Elas fornecem relatórios e insights sobre o estado de conformidade da infraestrutura de nuvem.
+
+3. **Detecção de Configurações Incorretas:**
+   - Identificação de configurações de segurança inadequadas ou vulneráveis, como permissões excessivas, instâncias expostas à internet, falta de criptografia, e outras práticas de configuração inadequadas.
+
+4. **Automação de Correções:**
+   - Algumas ferramentas de CSPM permitem a correção automática de problemas de configuração, aplicando patches ou ajustes de configuração necessários para manter a segurança.
+
+5. **Análise de Riscos e Relatórios:**
+   - CSPM oferece uma análise abrangente de riscos, destacando áreas de vulnerabilidade e priorizando ações corretivas. Relatórios detalhados ajudam as equipes de segurança a entender e mitigar riscos.
+
+6. **Integração com Outros Sistemas de Segurança:**
+   - Integração com SIEM (Security Information and Event Management), SOAR (Security Orchestration, Automation, and Response), e outras ferramentas de segurança para fornecer uma visão unificada e melhorar a resposta a incidentes.
+
+### Benefícios do CSPM
+
+1. **Melhoria da Segurança:**
+   - Reduz a superfície de ataque ao identificar e corrigir configurações inadequadas que possam ser exploradas por atacantes.
+
+2. **Conformidade Simplificada:**
+   - Facilita a conformidade com regulamentações de segurança, fornecendo verificações automatizadas e relatórios de conformidade.
+
+3. **Visibilidade Ampliada:**
+   - Oferece visibilidade abrangente sobre o estado de segurança de todos os recursos de nuvem, permitindo que as organizações identifiquem rapidamente pontos fracos.
+
+4. **Redução de Riscos:**
+   - Mitiga riscos de segurança proativamente, evitando potenciais incidentes de segurança e violações de dados.
+
+5. **Eficiência Operacional:**
+   - Automatiza processos de verificação e correção, liberando as equipes de segurança para se concentrar em tarefas estratégicas e de alto valor.
+
+### Exemplos de Ferramentas CSPM
+
+1. **AWS Security Hub:**
+   - Serviço da AWS que oferece uma visão abrangente do estado de segurança em contas AWS, integrando verificações de conformidade e detecção de ameaças.
+
+2. **Azure Security Center:**
+   - Serviço da Microsoft Azure que fornece monitoramento contínuo de segurança, avaliação de conformidade, e recomendações de segurança para recursos em nuvem.
+
+3. **Google Cloud Security Command Center:**
+   - Plataforma da Google Cloud que oferece visibilidade de segurança, detecção de ameaças e análise de riscos para recursos do Google Cloud.
+
+4. **Palo Alto Networks Prisma Cloud:**
+   - Solução de segurança em nuvem que oferece CSPM, segurança de cargas de trabalho, e conformidade para ambientes multicloud.
+
+5. **Check Point CloudGuard:**
+   - Ferramenta de segurança em nuvem que fornece CSPM, proteção contra ameaças e conformidade para recursos em nuvem pública e híbrida.
+
+### Conclusão
+
+CSPM é uma solução essencial para organizações que utilizam infraestruturas de nuvem, fornecendo monitoramento contínuo, avaliação de conformidade, e automação de correções para garantir que os recursos em nuvem estejam seguros e em conformidade com as melhores práticas. Implementar uma ferramenta de CSPM pode ajudar a reduzir riscos de segurança, simplificar a conformidade e melhorar a visibilidade e a gestão de segurança em ambientes de nuvem.

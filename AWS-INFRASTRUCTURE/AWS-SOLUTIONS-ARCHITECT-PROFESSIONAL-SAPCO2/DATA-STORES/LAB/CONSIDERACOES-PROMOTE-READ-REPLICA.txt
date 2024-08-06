@@ -1,0 +1,62 @@
+Quando você promove uma read replica no Amazon RDS (Relational Database Service), a read replica é convertida em uma instância de banco de dados independente. A seguir estão os principais pontos que descrevem o que ocorre durante e após a promoção de uma read replica:
+
+### Processo de Promoção de Read Replica
+
+1. **Descontinuação da Replicação:**
+   - A replicação de dados entre a instância mestre e a read replica é interrompida. A read replica deixa de receber atualizações da instância mestre.
+
+2. **Conversão para Instância Independente:**
+   - A read replica é convertida em uma instância de banco de dados standalone, que pode aceitar leituras e gravações. Ela deixa de ser uma réplica de leitura e torna-se uma instância primária.
+
+3. **Atualização do Endpoint:**
+   - Um novo endpoint é criado para a nova instância independente. Esse endpoint deve ser usado para se conectar à instância promovida, pois o endpoint da read replica antiga não será mais válido.
+
+4. **Mudança de Estado:**
+   - A instância de read replica passa para um estado de promoção durante o processo. Dependendo do tamanho da base de dados e da carga de trabalho, esse processo pode levar algum tempo.
+   - Depois que a promoção estiver concluída, o estado da instância será atualizado para "available", indicando que está pronta para aceitar conexões de leitura e gravação.
+
+### Considerações Pós-Promoção
+
+1. **Disponibilidade de Dados:**
+   - A nova instância contém todos os dados que estavam presentes na read replica até o momento da promoção. Não há perda de dados na read replica durante a promoção.
+
+2. **Configurações e Backups:**
+   - A nova instância herda as configurações de backup, manutenção e segurança da read replica. Verifique e ajuste essas configurações conforme necessário para a instância primária.
+
+3. **Alterações de Aplicação:**
+   - Atualize as configurações de conexão das aplicações para utilizar o novo endpoint da instância promovida.
+   - Garanta que todas as dependências e configurações associadas à instância mestre original sejam revisadas e adaptadas conforme necessário.
+
+### Cenários Comuns para Promoção de Read Replica
+
+1. **Recuperação de Desastres:**
+   - Se a instância mestre falhar ou se tornar inacessível, uma read replica pode ser promovida para minimizar o tempo de inatividade e continuar oferecendo o serviço de banco de dados.
+
+2. **Distribuição de Carga de Trabalho:**
+   - Promoção de read replicas para distribuir a carga de trabalho de leitura e escrita entre múltiplas instâncias, especialmente em cenários de escalabilidade horizontal.
+
+3. **Migração e Atualização:**
+   - Uso de read replicas para migrar dados ou atualizar a arquitetura do banco de dados sem interromper a operação contínua do serviço.
+
+### Exemplo Prático
+
+Aqui está um exemplo de como promover uma read replica no Amazon RDS usando o AWS Management Console:
+
+1. **Navegue até o Console do RDS:**
+   - Abra o Console de Gerenciamento da AWS e navegue até o serviço Amazon RDS.
+
+2. **Selecione a Read Replica:**
+   - No painel de navegação, selecione "Databases".
+   - Escolha a read replica que deseja promover.
+
+3. **Iniciar a Promoção:**
+   - No menu "Actions", clique em "Promote read replica".
+   - Configure as opções de promoção, como "Backup Retention Period" (período de retenção de backup) e outros parâmetros conforme necessário.
+   - Clique em "Promote Read Replica" para iniciar o processo.
+
+4. **Monitoramento:**
+   - Acompanhe o estado da instância no console do RDS. Ela passará pelo estado de "promoting" até que esteja "available" como uma instância independente.
+
+### Conclusão
+
+Promover uma read replica no Amazon RDS transforma a réplica de leitura em uma instância de banco de dados standalone, pronta para operações completas de leitura e escrita. Esse processo é útil em cenários de recuperação de desastres, migração e distribuição de carga de trabalho. É essencial atualizar as conexões de aplicação para usar o novo endpoint da instância promovida e revisar as configurações de backup e segurança.
