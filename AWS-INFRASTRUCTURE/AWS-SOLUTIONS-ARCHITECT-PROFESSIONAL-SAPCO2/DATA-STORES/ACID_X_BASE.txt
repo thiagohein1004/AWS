@@ -1,0 +1,66 @@
+ACID vs BASE: Compreendendo as Diferenças
+
+Fala pessoal! CEIS TÃO BOM? 😉
+— Vou começar a fazer blog! só pra passar um tempo, não sou nenhum profissional, mas isso vai me ajudar muito a solidificar meus conhecimentos.
+— (Motivos do Texto: Vou dar uma explanada no conhecimento sobre ACID e BASE, por conta de uma discursão de 2h com alguns amigos. hehehehe 😅.)
+— Boom conversei com alguns colegas sobre ACID vs BASE e suas diferenças. Você sabe o que são esses modelos e como funcionam em diferentes situações, certo? Não!? bom vamos entender então.
+Eu e meus amigos tivemos uma discussão legal sobre as vantagens e desvantagens de usar um banco ACID ou BASE, e foi interessante entender como as transações são gerenciadas em sistemas grandes e distribuídos.
+
+Mais o que é ACID, é algo Ácidos, hehehehe?
+— Ops, nada disso!
+
+ACID é um acrônimo para Atomicidade, Consistência, Isolamento e Durabilidade. O modelo ACID garante que as transações sejam executadas de forma confiável, mantendo a integridade dos dados em um ambiente de várias transações simultâneas.
+
+⚫ Atomicidade: garante que todas as operações de uma transação sejam executadas com sucesso ou nenhuma delas seja executada. Se uma parte da transação falhar, todas as operações devem ser revertidas.
+
+⚫ Consistência: garante que a transação mantenha a consistência dos dados. Os dados devem estar em um estado consistente antes e depois da transação.
+
+⚫ Isolamento: garante que as transações sejam executadas de forma isolada, sem interferir umas nas outras.
+
+⚫ Durabilidade: garante que as alterações de uma transação sejam permanentes, mesmo em caso de falha do sistema.
+
+— “Ótimo!!!, tem exemplo de como raios isso se aplicaria?”
+Aqui vai o melhor exemplo que eu conheço, porque envolve DINHEIRO!💸😂
+
+Imagine que você está fazendo uma transferência bancária para um amigo. Para garantir que a transação seja feita com segurança e sem erros, você segue as seguintes etapas:
+
+Início da transação: você digita o valor da transferência e confirma a transação.
+
+Dedução de valores: o banco verifica se você tem o saldo necessário em sua conta e, se tiver, o valor é deduzido.
+
+Adição de valores: o banco verifica a conta do seu amigo e adiciona o valor transferido.
+
+Confirmação da transação: você e seu amigo recebem a confirmação da transação por e-mail/mensagem de Texto.
+
+Se por algum motivo a transação não puder ser concluída (por exemplo, se você não tiver saldo suficiente em sua conta), a transação será revertida e nenhum valor será transferido. Isso garante que todas as transações bancárias sejam realizadas de maneira consistente e segura, seguindo as propriedades ACID.
+
+— Perfeito, espero que tenha entendido até aqui!😎
+— Agora vamos cair de cabeça no BASE, literalmente…
+
+Já o BASE é um acrônimo para Basically Available (basicamente disponível), Soft State (estado suave) e Eventually Consistent (eventualmente consistente). O modelo BASE é uma alternativa ao modelo ACID, com uma abordagem mais flexível para o processamento de transações em sistemas distribuídos,
+
+⚫ Basicamente disponível: garante que o sistema esteja sempre disponível, mesmo que ele não esteja funcionando em sua capacidade total.
+
+⚫Estado suave: permite que o estado do sistema possa mudar ao longo do tempo, mesmo sem entrada de dados externos.
+
+⚫Eventualmente consistente: garante que os dados serão eventualmente consistentes após as transações serem processadas. O modelo BASE não garante a consistência imediata dos dados, mas sim que eles serão eventualmente consistentes.
+
+Em resumo, o modelo ACID prioriza a consistência dos dados em detrimento da disponibilidade, enquanto o modelo BASE prioriza a disponibilidade dos dados em detrimento da consistência imediata. A escolha entre ACID e BASE depende do contexto de uso do sistema e das necessidades do negócio.
+
+— Ele aparente ser mais fácil de entender que o ACID, tem algum exemplo?
+
+Imagine que você está em uma rede social que permite postagens de fotos e vídeos. Quando você posta uma foto, ela é armazenada em um servidor e depois é copiada para outros servidores em diferentes partes do mundo, permitindo que outras pessoas acessem seu conteúdo. No entanto, se um amigo tentar ver sua foto antes dela ser copiada para todos os servidores, ele pode receber um erro temporário. Mas isso não é um grande problema porque o mais importante é que o conteúdo esteja disponível para todo mundo o mais rápido possível, mesmo que algumas pessoas precisem esperar um pouquinho.
+É tipo aquela frase: “antes disponível do que perfeito”. E é isso BASE faz!
+
+— Talvez esse seja um exemplo um pouco confuso no começo…. (Eu espero que não seja. hehehehe)
+— Então quer dizer que o BASE é o ACID só que informal? é isso?
+
+Basicamente sim. O BASE é uma outra forma de pensar sobre a consistência dos dados em um sistema distribuído, que é mais flexível do que o ACID. Em geral, o ACID é mais formal porque segue um conjunto estrito de propriedades que garantem a consistência dos dados, enquanto o BASE é mais informal porque se concentra em garantir a disponibilidade dos dados, mesmo que a consistência seja temporariamente comprometida. Ambas as abordagens têm seus prós e contras, e a escolha entre ACID e BASE dependerá do contexto e dos requisitos do seu sistema.
+
+— Mas como eu vou saber quando usar e não usar o ACID ou BASE?
+
+
+A escolha entre usar uma abordagem ACID ou BASE depende das necessidades específicas do sistema ou aplicação em questão. Se a consistência dos dados é absolutamente crítica e não pode haver qualquer perda ou inconsistência, como em sistemas financeiros ou de processamento de transações em tempo real, a abordagem ACID pode ser mais apropriada.
+Por outro lado, se a disponibilidade é mais importante do que a consistência, como em sistemas de mídia social ou e-commerce, a abordagem BASE pode ser mais adequada. É importante considerar as necessidades do sistema em termos de consistência, disponibilidade, tolerância a falhas e outros fatores relevantes para decidir qual abordagem usar.
+
+— FIM DO TEXTÃO!—
