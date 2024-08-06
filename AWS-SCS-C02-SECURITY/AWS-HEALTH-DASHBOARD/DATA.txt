@@ -1,0 +1,51 @@
+O AWS Service Health Dashboard (SHD) é uma ferramenta que fornece informações em tempo real sobre o status e a disponibilidade dos serviços da AWS. Ele permite que os usuários monitorem a saúde dos serviços da AWS globalmente e em regiões específicas, ajudando a identificar problemas que possam estar afetando suas aplicações ou infraestrutura.
+
+### Funcionalidades do AWS Service Health Dashboard
+
+1. **Visão Geral da Saúde do Serviço:**
+   - Exibe o status atual de todos os serviços da AWS em todas as regiões.
+   - Informa se os serviços estão operando normalmente, se há interrupções ou problemas de desempenho.
+
+2. **Histórico de Incidentes:**
+   - Oferece um histórico dos incidentes e problemas passados.
+   - Permite visualizar eventos passados e suas resoluções.
+
+3. **Detalhamento de Incidentes:**
+   - Fornece informações detalhadas sobre incidentes específicos, incluindo descrição do problema, atualizações e resoluções.
+   - Permite aos usuários entender o impacto e o escopo dos incidentes.
+
+4. **Notificações de Eventos:**
+   - Usuários podem se inscrever para receber notificações de eventos de saúde dos serviços via Amazon SNS (Simple Notification Service).
+   - Permite configuração de alertas para eventos específicos de serviços ou regiões.
+
+5. **Serviço Global e Regional:**
+   - Informações sobre a saúde de serviços globais (como IAM) e serviços específicos de regiões (como EC2 em us-east-1).
+   - Permite a seleção de regiões específicas para monitoramento mais detalhado.
+
+### Como Acessar o AWS Service Health Dashboard
+
+1. **Via Web:**
+   - Acesse diretamente o AWS Service Health Dashboard através do link: [AWS Service Health Dashboard](https://status.aws.amazon.com/).
+   - Não requer login para visualizar o status dos serviços.
+
+2. **Via Console da AWS:**
+   - No Console de Gerenciamento da AWS, você pode acessar informações de saúde dos serviços específicos diretamente na página principal.
+
+### Uso Prático
+
+- **Monitoramento Proativo:** 
+  - Ideal para equipes de operações que precisam monitorar continuamente o status dos serviços da AWS e reagir rapidamente a problemas.
+- **Diagnóstico de Problemas:**
+  - Útil para diagnosticar problemas quando há suspeitas de que uma interrupção do serviço AWS possa estar afetando suas aplicações.
+- **Planejamento e Comunicação:**
+  - Ajuda na comunicação interna e externa sobre incidentes da AWS que possam estar impactando clientes ou stakeholders.
+
+### Exemplo de Tela do AWS Service Health Dashboard
+
+![AWS Service Health Dashboard](https://aws.amazon.com/premiumsupport/technology/aws-service-health-dashboard/)
+
+### Conclusão
+
+O AWS Service Health Dashboard é uma ferramenta essencial para qualquer usuário da AWS, oferecendo visibilidade em tempo real sobre o status dos serviços AWS. Isso permite que as equipes de TI e operações mantenham suas aplicações funcionando de forma eficiente e minimizem o impacto de interrupções dos serviços AWS.
+
+Se precisar de mais informações ou ajuda para configurar notificações de eventos, estou à disposição.

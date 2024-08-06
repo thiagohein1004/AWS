@@ -1,0 +1,56 @@
+O AWS Inspector é um serviço de avaliação automatizada de segurança que ajuda a melhorar a segurança e a conformidade dos aplicativos implantados na Amazon Web Services (AWS). Ele avalia a segurança de aplicativos hospedados na AWS ao procurar vulnerabilidades ou desvios das melhores práticas de segurança.
+
+### Funcionalidades Principais do AWS Inspector
+
+1. **Avaliações Automatizadas:**
+   - Realiza avaliações automatizadas em suas instâncias do Amazon EC2 para identificar possíveis vulnerabilidades e exposições a riscos.
+
+2. **Vulnerabilidades e Melhores Práticas:**
+   - Verifica a presença de vulnerabilidades de segurança conhecidas, incluindo configurações incorretas, patches desatualizados e software vulnerável.
+   - Avalia a conformidade com melhores práticas de segurança específicas da AWS.
+
+3. **Modelos de Avaliação:**
+   - Permite a criação de modelos de avaliação personalizados com regras específicas para se adequar às necessidades do seu ambiente e das suas políticas de segurança.
+
+4. **Relatórios de Avaliação:**
+   - Gera relatórios detalhados de avaliação que incluem descobertas, classificações de risco e recomendações de correção.
+   - As descobertas são classificadas por nível de gravidade para ajudar na priorização das ações corretivas.
+
+5. **Integração com Outros Serviços da AWS:**
+   - Integra-se com AWS CloudTrail, AWS CloudWatch e AWS Lambda para automação de respostas e auditoria de atividades.
+   - Suporta a execução de avaliações contínuas e agendadas para manter a segurança ao longo do tempo.
+
+### Casos de Uso do AWS Inspector
+
+1. **Avaliação de Vulnerabilidades:**
+   - Identifica e remedia vulnerabilidades em instâncias do EC2, como problemas de configuração e software desatualizado.
+
+2. **Conformidade com Regulamentações:**
+   - Ajuda a garantir que suas instâncias do EC2 estejam em conformidade com normas de segurança e regulamentos da indústria, como PCI DSS e CIS Benchmarks.
+
+3. **Segurança de DevOps:**
+   - Integra-se com pipelines de CI/CD para realizar avaliações de segurança durante o processo de desenvolvimento e implantação, permitindo a detecção precoce de problemas de segurança.
+
+### Como Funciona o AWS Inspector
+
+1. **Instalação do Agente:**
+   - Um agente do AWS Inspector deve ser instalado em cada instância do EC2 que você deseja avaliar.
+
+2. **Criação de Modelos de Avaliação:**
+   - Defina modelos de avaliação que especificam o escopo e as regras de avaliação. Isso inclui a seleção de instâncias, a definição da duração da avaliação e a escolha dos pacotes de regras de segurança.
+
+3. **Execução de Avaliações:**
+   - Inicie avaliações usando os modelos configurados. As avaliações podem ser agendadas ou executadas manualmente conforme necessário.
+
+4. **Análise de Relatórios:**
+   - Revise os relatórios de avaliação gerados pelo AWS Inspector para identificar e priorizar ações corretivas com base nas descobertas e nas recomendações de segurança fornecidas.
+
+### Exemplo de Relatório do AWS Inspector
+
+![AWS Inspector Report](https://d1.awsstatic.com/Inspecor/inspector-report.7b9dc2d84e10c62ff0b5dfbe541e000f254a5af7.png)
+
+### Conclusão
+
+O AWS Inspector é uma ferramenta poderosa para automatizar a avaliação de segurança e conformidade de suas instâncias do EC2 na AWS. Ele ajuda a identificar vulnerabilidades, melhorar a postura de segurança e garantir que os aplicativos estejam em conformidade com as melhores práticas e regulamentos de segurança. 
+
+Se precisar de mais informações ou ajuda para configurar o AWS Inspector, estou à disposição.
