@@ -1,0 +1,29 @@
+O **AWS CloudFront** é um serviço de **Content Delivery Network (CDN)** oferecido pela Amazon Web Services (AWS). Ele foi projetado para entregar conteúdo, como páginas da web, vídeos, imagens, e outros arquivos de mídia, para usuários ao redor do mundo com baixa latência e alta velocidade. Aqui estão os principais aspectos do CloudFront:
+
+### Como o AWS CloudFront Funciona:
+1. **Distribuição Global de Conteúdo:**
+   - CloudFront possui uma rede global de **pontos de presença** (PoPs), também conhecidos como edge locations, localizados em várias partes do mundo. Quando um usuário solicita conteúdo, o CloudFront o entrega a partir do PoP mais próximo, reduzindo a latência.
+
+2. **Cache de Conteúdo:**
+   - CloudFront armazena em cache cópias do seu conteúdo em seus PoPs, o que permite que os usuários acessem rapidamente o conteúdo sem precisar ir até o servidor de origem para cada solicitação.
+
+3. **Integração com Outros Serviços da AWS:**
+   - O CloudFront se integra facilmente com outros serviços da AWS, como **Amazon S3** (para armazenamento de arquivos), **Elastic Load Balancing** (para distribuir tráfego), e **AWS Shield** (para proteção contra ataques DDoS).
+
+4. **Segurança e Controle:**
+   - Oferece recursos de segurança, como HTTPS para criptografia de dados em trânsito, integração com AWS WAF (Web Application Firewall) para proteção contra ameaças, e suporte a certificados SSL/TLS personalizados.
+
+5. **Escalabilidade:**
+   - CloudFront é altamente escalável, capaz de lidar com grandes volumes de tráfego sem degradação de desempenho.
+
+### Casos de Uso Comuns:
+- **Distribuição de Conteúdo Estático e Dinâmico:** Entrega rápida de imagens, vídeos, arquivos CSS/JS e APIs para aplicações web e móveis.
+- **Streaming de Vídeo:** Streaming de vídeo sob demanda ou ao vivo para audiências globais.
+- **Segurança de Aplicações Web:** Proteção de aplicações contra ataques comuns da web, utilizando integração com AWS WAF e AWS Shield.
+
+### Vantagens do AWS CloudFront:
+- **Baixa Latência:** Entrega de conteúdo a partir de locais geograficamente próximos ao usuário final.
+- **Alta Disponibilidade:** A infraestrutura global da AWS garante que o conteúdo esteja disponível mesmo em caso de falhas em uma região.
+- **Custo-eficiência:** CloudFront permite pagar apenas pelo que você usa, sem taxas iniciais ou de longo prazo.
+
+O CloudFront é amplamente utilizado por empresas que precisam de uma solução robusta para entrega rápida e segura de conteúdo a uma audiência global.

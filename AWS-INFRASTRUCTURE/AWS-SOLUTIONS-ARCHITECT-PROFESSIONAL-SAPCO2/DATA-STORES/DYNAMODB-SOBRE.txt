@@ -1,0 +1,27 @@
+DynamoDB é um serviço de banco de dados NoSQL oferecido pela Amazon Web Services (AWS). Ele é projetado para oferecer desempenho previsível e alta escalabilidade, ideal para aplicações que requerem baixíssima latência e podem crescer rapidamente. Aqui estão alguns pontos-chave sobre o DynamoDB:
+
+1. **Modelo de Dados**:
+   - Utiliza um modelo de dados baseado em tabelas, com cada tabela contendo itens e cada item contendo atributos. 
+   - Suporta dois tipos de chave primária: chave de partição (partition key) e chave composta de partição e ordenação (partition key and sort key).
+
+2. **Escalabilidade**:
+   - Automaticamente particiona e redistribui os dados para gerenciar a carga de tráfego de leitura e escrita.
+   - Oferece escalabilidade horizontal, permitindo que você aumente ou diminua a capacidade conforme necessário sem tempo de inatividade.
+
+3. **Desempenho**:
+   - Fornece latência de um dígito em milissegundos para operações de leitura e escrita.
+   - Suporta leituras consistentes fortemente e eventualmente.
+
+4. **Segurança**:
+   - Integra-se com o AWS Identity and Access Management (IAM) para controle de acesso baseado em políticas.
+   - Oferece criptografia em repouso e em trânsito para proteger os dados sensíveis.
+
+5. **Disponibilidade e Resiliência**:
+   - Replica automaticamente os dados em três locais dentro de uma região AWS, garantindo alta disponibilidade e durabilidade.
+   - Oferece opções de backup e restauração para proteger contra perda de dados.
+
+6. **Flexibilidade de Consumo**:
+   - Permite a escolha entre modos de capacidade sob demanda e provisionada, ajudando a otimizar os custos.
+   - Suporta integração com outros serviços AWS, como AWS Lambda, para criação de aplicações serverless.
+
+DynamoDB é amplamente utilizado para aplicações que exigem escalabilidade rápida e flexível, como jogos, IoT, comércio eletrônico e outras aplicações web e móveis que necessitam de desempenho consistente e alta disponibilidade.

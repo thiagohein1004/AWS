@@ -1,0 +1,47 @@
+Shield - serviço que protege de ataques DDOS
+
+O Shield Standard vem por padrão gratuito no Route53 e Cloudfront
+
+Atinge a camada no L3/L4 (transpoorte e rede)
+
+____________________________
+
+Shiel Advanced - valor mensal (mais ou menos 3k mês/organização)
+
+Time específico de response de apoio que identifica quando é ataque DDoS.
+
+Pode ser utilizado com mais serviços:
+
+ELB
+Global Acelerator
+Elastic IP
+E outros serviços de borda
+
+
+Tem a proteção financeira negociado com a AWS, principalmente por escalabilidade devido ao ataque
+
+____________________________
+
+No **AWS Shield**, que é um serviço de proteção contra ataques DDoS, você não precisa necessariamente criar regras específicas como faria em um firewall ou em um Web Application Firewall (WAF). O AWS Shield, especialmente na sua versão **Shield Standard**, opera automaticamente para proteger os seus recursos da AWS contra uma variedade de ataques DDoS.
+
+### AWS Shield Standard
+- **Automatizado e Sempre Ativo:** O AWS Shield Standard oferece proteção automatizada contra ataques DDoS comuns (como ataques de volumetria, TCP SYN/ACK floods, e UDP reflection attacks) sem a necessidade de intervenção ou configuração adicional por parte do usuário.
+- **Sem Custo Adicional:** Essa proteção básica está disponível automaticamente para todos os serviços da AWS sem custo adicional.
+
+### AWS Shield Advanced
+Se você optar pelo **AWS Shield Advanced**, ele oferece proteção mais robusta e permite maior controle, mas ainda assim você não precisa "criar regras" no sentido tradicional. Em vez disso, você pode:
+
+- **Configurar Proteções Avançadas:** No Shield Advanced, você pode habilitar proteções avançadas para recursos específicos (como Elastic Load Balancing, Amazon CloudFront, AWS Global Accelerator, e Route 53).
+- **Monitoramento e Análise:** Shield Advanced oferece monitoramento 24/7 e relatórios detalhados. Ele pode detectar e mitigar ataques mais complexos e volumosos.
+- **Mitigação Personalizada:** Em caso de um ataque, você tem acesso ao AWS DDoS Response Team (DRT), que pode fornecer assistência na mitigação e personalizar respostas a ataques específicos.
+
+### Integração com AWS WAF
+Embora o Shield não exija a criação de regras, ele é frequentemente usado em conjunto com o **AWS WAF**. O AWS WAF permite que você crie regras personalizadas para bloquear tráfego indesejado com base em padrões específicos (como endereços IP, cabeçalhos HTTP, ou strings de consulta).
+
+- **Regras no AWS WAF:** Você pode definir regras no WAF para bloquear ou permitir tráfego, e essas regras podem ser ajustadas para responder a ataques detectados pelo AWS Shield.
+
+### Conclusão
+Se você estiver usando o **AWS Shield Standard**, não é necessário criar regras, pois a proteção é automática. Se estiver usando o **AWS Shield Advanced**, você pode configurar proteções avançadas e utilizar o AWS WAF para um controle mais granular.
+
+
+
