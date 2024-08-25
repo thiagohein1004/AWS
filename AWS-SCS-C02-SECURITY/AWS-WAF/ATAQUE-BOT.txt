@@ -1,0 +1,34 @@
+Um **ataque de bot** ocorre quando bots (programas automatizados) são usados para realizar atividades maliciosas em um site ou aplicativo. Bots podem ser utilizados para executar uma ampla variedade de tarefas automatizadas, e enquanto alguns bots são legítimos (como os de mecanismos de busca), outros são usados por atacantes para fins prejudiciais.
+
+### Tipos Comuns de Ataques de Bots:
+
+1. **Scraping de Dados:**
+   - **Descrição:** Bots maliciosos podem ser usados para coletar dados sensíveis ou protegidos de um site, como preços de produtos, conteúdo protegido por direitos autorais, ou informações pessoais de usuários.
+   - **Impacto:** Isso pode resultar em perda de vantagem competitiva, violação de direitos autorais ou exposição de dados sensíveis.
+
+2. **Ataques de Força Bruta:**
+   - **Descrição:** Bots são usados para tentar adivinhar combinações de nome de usuário e senha, geralmente em grande escala, para ganhar acesso não autorizado a contas de usuários.
+   - **Impacto:** Pode resultar em compromissos de contas e perda de informações pessoais e financeiras.
+
+3. **DDoS (Distributed Denial of Service):**
+   - **Descrição:** Bots são organizados em redes chamadas botnets para sobrecarregar um servidor ou rede com tráfego massivo, visando tirar um site ou serviço do ar.
+   - **Impacto:** Interrupção dos serviços, perda de receita e danos à reputação.
+
+4. **Fraude de Cliques (Click Fraud):**
+   - **Descrição:** Bots são usados para clicar em anúncios online repetidamente, gerando receita falsa para o anunciante e custos injustificados para os anunciantes.
+   - **Impacto:** Fraude financeira e distorção de métricas de marketing.
+
+5. **Ataques de SPAM:**
+   - **Descrição:** Bots são usados para postar comentários não solicitados, enviar e-mails em massa ou criar contas falsas em sites.
+   - **Impacto:** Poluição de conteúdos legítimos, danos à reputação e sobrecarga de sistemas de email e moderação.
+
+### Como os Bots Operam:
+
+- **Automação:** Bots são programas que executam tarefas automaticamente, sem a necessidade de intervenção humana. Eles podem ser programados para realizar ações como envio de formulários, navegação em sites, coleta de informações, etc.
+- **Velocidade e Escala:** Bots operam em uma velocidade muito maior do que os humanos, o que os torna particularmente perigosos quando usados para fins maliciosos.
+- **Camuflagem:** Bots maliciosos podem tentar se passar por usuários legítimos, usando técnicas como disfarçar o agente de usuário (user agent) ou originar tráfego de IPs distribuídos geograficamente.
+
+### Proteção contra Ataques de Bots:
+Para proteger contra ataques de bots, as empresas utilizam tecnologias como firewalls de aplicação web (WAF), soluções de gerenciamento de bots, e autenticação baseada em CAPTCHA para distinguir entre bots e usuários legítimos.
+
+Ataques de bots representam uma ameaça significativa à segurança e à operação de sites e aplicações online, e a detecção e mitigação eficazes desses ataques são cruciais para manter a integridade e disponibilidade dos serviços.

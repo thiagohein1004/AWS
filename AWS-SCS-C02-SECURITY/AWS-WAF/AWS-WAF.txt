@@ -1,0 +1,63 @@
+O **AWS WAF (Web Application Firewall)** é um serviço de firewall de aplicação web oferecido pela Amazon Web Services (AWS). Ele permite que você proteja suas aplicações web contra explorações e ataques maliciosos comuns na web, como injeção de SQL, ataques de script entre sites (XSS), e ataques de negação de serviço (DDoS).
+
+### Principais Funcionalidades do AWS WAF:
+
+1. **Criação de Regras Personalizadas:**
+   - Com o AWS WAF, você pode criar regras personalizadas para permitir, bloquear ou monitorar (contar) o tráfego da web com base em condições definidas, como endereços IP, cabeçalhos HTTP, strings de consulta, e padrões de URI. Essas regras podem ser aplicadas em várias instâncias, como Amazon CloudFront, API Gateway, Application Load Balancer (ALB), e AWS AppSync.
+
+2. **Proteção Contra Ameaças Comuns:**
+   - O AWS WAF oferece proteção contra ameaças comuns da web, como injeção de SQL e Cross-Site Scripting (XSS). Você pode criar regras para bloquear essas ameaças ou usar regras gerenciadas fornecidas por AWS ou por parceiros do AWS Marketplace.
+
+3. **Regras Gerenciadas:**
+   - A AWS e seus parceiros oferecem conjuntos de regras gerenciadas que são pré-configuradas para proteger contra as vulnerabilidades e ameaças mais comuns. Isso facilita a implementação de uma camada básica de segurança sem a necessidade de criar regras personalizadas do zero.
+
+4. **Integração com AWS Shield:**
+   - O AWS WAF pode ser usado em conjunto com o AWS Shield Advanced para proteção contra ataques DDoS. Isso oferece uma proteção mais abrangente contra diferentes tipos de ameaças que podem afetar suas aplicações web.
+
+5. **Escalabilidade e Flexibilidade:**
+   - O AWS WAF é altamente escalável, capaz de proteger múltiplas aplicações web com diferentes conjuntos de regras, permitindo que você personalize a segurança conforme as necessidades de cada aplicação.
+
+6. **Monitoramento e Logs:**
+   - O AWS WAF oferece visibilidade em tempo real sobre o tráfego da web, permitindo que você monitore tentativas de ataques e ajuste suas regras de acordo. Logs detalhados podem ser enviados para o Amazon S3 ou para serviços como o Amazon CloudWatch ou AWS Lambda para processamento adicional.
+
+### Casos de Uso Comuns:
+- **Proteção de Aplicações Web:** Protege suas aplicações web contra ataques comuns como injeção de SQL, XSS, e ataques DDoS.
+- **Cumprimento de Políticas de Segurança:** Implementação de regras que garantem conformidade com políticas de segurança corporativas.
+- **Mitigação de Bots Maliciosos:** Bloqueio de bots automatizados que podem causar sobrecarga nos servidores ou tentar explorar vulnerabilidades.
+
+### Benefícios:
+- **Controle Granular:** Permite criar regras muito específicas para atender às necessidades de segurança da sua aplicação.
+- **Facilidade de Uso:** Interface simples para criar e gerenciar regras.
+- **Integração com Outros Serviços AWS:** Funciona perfeitamente com serviços como CloudFront, ALB, e API Gateway.
+
+O AWS WAF é uma ferramenta essencial para empresas que buscam fortalecer a segurança de suas aplicações web, permitindo tanto a proteção contra ameaças conhecidas quanto a personalização de regras para atender a requisitos específicos de segurança.
+
+______________________________
+
+OWASP
+
+**OWASP** (Open Web Application Security Project) é uma organização global sem fins lucrativos focada em melhorar a segurança de software. Fundada em 2001, a OWASP é amplamente reconhecida por fornecer recursos, ferramentas e padrões gratuitos e abertos para ajudar desenvolvedores, empresas e equipes de segurança a construir, implementar e manter aplicações seguras.
+
+### Principais Atividades e Recursos da OWASP:
+
+1. **OWASP Top 10:**
+   - Um dos projetos mais conhecidos da OWASP, o OWASP Top 10 é uma lista que destaca as 10 vulnerabilidades de segurança mais críticas em aplicações web. É amplamente utilizado como referência por desenvolvedores e profissionais de segurança para entender e mitigar os riscos mais comuns.
+
+2. **Projetos e Ferramentas:**
+   - A OWASP mantém uma variedade de ferramentas e projetos que ajudam na análise e melhoria da segurança de software, como o OWASP ZAP (Zed Attack Proxy), uma ferramenta usada para encontrar vulnerabilidades em aplicações web, e o OWASP Dependency-Check, que verifica bibliotecas e componentes de software em busca de vulnerabilidades conhecidas.
+
+3. **Guias e Documentação:**
+   - A OWASP publica guias abrangentes sobre práticas de desenvolvimento seguro, como o OWASP Application Security Verification Standard (ASVS), que define um padrão para testar a segurança de aplicações web.
+
+4. **Capítulos Locais e Conferências:**
+   - A OWASP tem capítulos locais em várias cidades ao redor do mundo que organizam eventos, treinamentos e conferências para promover a educação em segurança de aplicações. A OWASP Global AppSec é uma das principais conferências organizadas pela OWASP.
+
+5. **Educação e Conscientização:**
+   - A OWASP trabalha para aumentar a conscientização sobre segurança de software entre desenvolvedores, empresas e a comunidade em geral, promovendo uma cultura de segurança desde as fases iniciais do desenvolvimento de software.
+
+### Por que a OWASP é Importante?
+
+A OWASP é uma referência fundamental na indústria de segurança de software. Seus projetos, como o OWASP Top 10, são amplamente adotados por organizações de todos os tamanhos como base para políticas de segurança, práticas de desenvolvimento seguro e auditorias de segurança. A utilização dos recursos da OWASP ajuda a reduzir significativamente os riscos de segurança nas aplicações, protegendo tanto as empresas quanto os usuários finais contra ameaças cibernéticas.
+
+______________________________
+
