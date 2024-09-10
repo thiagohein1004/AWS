@@ -1,0 +1,209 @@
+Tools Recommended
+
+Boto3
+https://cidr.xyz/
+ipcalc
+
+____________________
+
+Boto3
+
+**Boto3** é o **SDK (Software Development Kit) para Python** que permite que desenvolvedores integrem e interajam programaticamente com os serviços da Amazon Web Services (AWS). Ele fornece uma interface direta para acessar e manipular recursos e serviços da AWS, como EC2 (Elastic Compute Cloud), S3 (Simple Storage Service), DynamoDB, Lambda, entre outros.
+
+### Principais Características do Boto3:
+
+1. **Interface Pythonica**: 
+   - Boto3 oferece uma interface que segue os princípios e convenções do Python, tornando-o intuitivo e fácil de usar para desenvolvedores familiarizados com a linguagem.
+
+2. **API Completa da AWS**: 
+   - Com o Boto3, você pode acessar e controlar praticamente todos os serviços da AWS, incluindo criar, configurar, gerenciar e excluir recursos.
+
+3. **Gerenciamento de Recursos**:
+   - **Resources**: O Boto3 fornece abstrações de alto nível para trabalhar com recursos da AWS, como instâncias EC2 ou buckets S3, permitindo que você manipule esses recursos de maneira mais simplificada e intuitiva.
+   - **Clients**: Além das abstrações de alto nível, o Boto3 oferece clientes de API para acesso direto e detalhado às operações da API de cada serviço da AWS.
+
+4. **Suporte para Operações Assíncronas**:
+   - Você pode realizar operações assíncronas e em paralelo usando o Boto3, o que é útil para melhorar a eficiência em tarefas que envolvem grande volume de dados ou múltiplas chamadas de API.
+
+5. **Facilidade de Autenticação e Autorização**:
+   - O Boto3 facilita a configuração de credenciais de segurança para acesso seguro aos serviços da AWS, utilizando o AWS Identity and Access Management (IAM).
+
+6. **Manipulação de Exceções e Tratamento de Erros**:
+   - O SDK oferece suporte abrangente para lidar com exceções e erros específicos dos serviços AWS, ajudando a construir aplicações robustas e resilientes.
+
+### Exemplo de Uso do Boto3
+
+Abaixo está um exemplo básico de como usar o Boto3 para listar os buckets no S3:
+
+```python
+import boto3
+
+# Cria uma sessão na AWS usando o perfil padrão configurado
+session = boto3.Session(profile_name='default')
+
+# Cria um cliente para o serviço S3
+s3 = session.client('s3')
+
+# Lista todos os buckets no S3
+response = s3.list_buckets()
+
+# Exibe os nomes dos buckets
+print("Buckets existentes:")
+for bucket in response['Buckets']:
+    print(bucket['Name'])
+```
+
+### Como Instalar o Boto3
+
+Você pode instalar o Boto3 usando o gerenciador de pacotes pip:
+
+```bash
+pip install boto3
+```
+
+### Quando Usar o Boto3?
+
+- **Automatização de Infraestrutura**: Automatize a criação, modificação e exclusão de recursos da AWS.
+- **Gerenciamento de Dados**: Manipule dados em serviços como S3, DynamoDB ou RDS.
+- **Análise e Relatórios**: Extraia dados de logs ou métricas dos serviços AWS para análise.
+- **DevOps e CI/CD**: Integre e orquestre fluxos de trabalho DevOps, como implantações automáticas, usando AWS Lambda, ECS, entre outros.
+
+Boto3 é uma ferramenta poderosa para desenvolvedores e engenheiros de DevOps que desejam interagir programaticamente com os serviços da AWS utilizando Python. Se precisar de mais detalhes ou exemplos de uso, estou à disposição para ajudar!
+
+____________________
+
+https://cidr.xyz/ 
+
+O site [**CIDR.xyz**](https://cidr.xyz/) é uma ferramenta online que ajuda a calcular e manipular intervalos de endereços IP usando a notação CIDR (Classless Inter-Domain Routing). A notação CIDR é amplamente utilizada na rede para representar blocos de endereços IP e definir sub-redes de forma eficiente.
+
+### Funcionalidades do CIDR.xyz
+
+1. **Cálculo de Sub-redes**:
+   - Você pode inserir um intervalo de endereços IP ou um bloco CIDR (por exemplo, `192.168.1.0/24`), e o site calculará automaticamente os intervalos de sub-redes, mostrando detalhes como o primeiro e o último endereço IP no intervalo, o número total de endereços e a máscara de sub-rede correspondente.
+
+2. **Conversão de CIDR para Intervalos de IP**:
+   - O site converte um bloco CIDR para seu respectivo intervalo de endereços IP, facilitando a visualização de quais endereços estão incluídos em um determinado bloco.
+
+3. **Informações sobre Máscaras de Sub-rede**:
+   - Fornece informações detalhadas sobre a máscara de sub-rede associada a um bloco CIDR específico, ajudando na configuração de sub-redes e na otimização do uso de endereços IP.
+
+4. **Facilidade de Uso**:
+   - A interface é intuitiva e direta, permitindo que usuários de todos os níveis de habilidade de rede usem a ferramenta sem necessidade de conhecimento avançado sobre o assunto.
+
+5. **Ferramenta de Estudo e Referência**:
+   - Ideal para estudantes e profissionais que trabalham com redes de computadores e precisam de uma ferramenta rápida para calcular e entender a distribuição de endereços IP e sub-redes.
+
+### Quando Usar o CIDR.xyz?
+
+- **Planejamento de Redes**: Quando você está projetando ou ajustando a configuração de uma rede, precisando calcular sub-redes ou alocar endereços IP de maneira eficiente.
+- **Educação e Estudo**: Para aprender sobre CIDR, sub-redes e planejamento de endereços IP, especialmente para quem está estudando para certificações de rede como CCNA, CompTIA Network+, etc.
+- **Verificação Rápida**: Se você precisar de uma verificação rápida de um bloco de endereços IP ou entender o tamanho de um bloco CIDR.
+
+Se precisar de mais detalhes sobre CIDR ou redes IP, ou como usar essa ferramenta de maneira específica, sinta-se à vontade para perguntar!
+
+____________________
+
+ipcalc
+
+Exemplo:
+
+thiago@ThinkPad-T14-TGO:~/Documents/GITHUB/AWS/AWS-NETWORKING$ ipcalc 192.168.15.0/24
+Address:   192.168.15.0         11000000.10101000.00001111. 00000000
+Netmask:   255.255.255.0 = 24   11111111.11111111.11111111. 00000000
+Wildcard:  0.0.0.255            00000000.00000000.00000000. 11111111
+=>
+Network:   192.168.15.0/24      11000000.10101000.00001111. 00000000
+HostMin:   192.168.15.1         11000000.10101000.00001111. 00000001
+HostMax:   192.168.15.254       11000000.10101000.00001111. 11111110
+Broadcast: 192.168.15.255       11000000.10101000.00001111. 11111111
+Hosts/Net: 254                   Class C, Private Internet
+
+**ipcalc** é uma ferramenta de linha de comando utilizada para cálculos de endereçamento IP e para análise de sub-redes. Ele é frequentemente usado em ambientes Unix/Linux para simplificar a tarefa de dividir uma rede em sub-redes menores ou para calcular detalhes de endereços IP de uma determinada sub-rede usando a notação CIDR (Classless Inter-Domain Routing).
+
+### Funcionalidades do ipcalc
+
+1. **Cálculo de Sub-redes**:
+   - O `ipcalc` permite que você insira um endereço IP e uma máscara de sub-rede (ou um bloco CIDR), e ele calcula automaticamente os detalhes da sub-rede, incluindo o endereço de rede, o endereço de broadcast, a máscara de sub-rede, o intervalo de endereços IP disponíveis, e o número de hosts disponíveis na sub-rede.
+
+2. **Conversão de Máscara de Sub-rede**:
+   - Converte entre diferentes formatos de máscara de sub-rede, como a notação CIDR e a notação decimal pontuada (por exemplo, `/24` para `255.255.255.0`).
+
+3. **Verificação de Endereço**:
+   - Permite verificar a validade de um endereço IP e sua máscara de sub-rede correspondente, o que é útil para configurar dispositivos de rede corretamente.
+
+4. **Divisão de Sub-redes**:
+   - Facilita a divisão de uma rede maior em sub-redes menores, especificando o número de sub-redes desejadas ou o número de hosts por sub-rede.
+
+5. **Compatibilidade de Plataforma**:
+   - `ipcalc` é uma ferramenta amplamente disponível em sistemas Unix/Linux, incluindo distribuições como Debian, Ubuntu, CentOS, Fedora, entre outras. Ele pode ser instalado e usado facilmente na maioria dos ambientes de linha de comando Linux.
+
+### Como Usar o ipcalc
+
+Aqui estão alguns exemplos de como usar o `ipcalc`:
+
+1. **Cálculo Básico de Sub-rede**:
+
+```bash
+ipcalc 192.168.1.0/24
+```
+
+Isso exibirá os detalhes da sub-rede para o bloco CIDR `192.168.1.0/24`, incluindo:
+
+- Endereço de rede
+- Endereço de broadcast
+- Máscara de sub-rede
+- Intervalo de endereços de hosts
+- Número de hosts disponíveis
+
+2. **Converter Máscara de Sub-rede para Notação CIDR**:
+
+```bash
+ipcalc 192.168.1.1 255.255.255.0
+```
+
+Isso mostra a notação CIDR correspondente (`/24`) e outros detalhes da sub-rede.
+
+3. **Dividir uma Rede em Sub-redes Menores**:
+
+```bash
+ipcalc -s 6 192.168.0.0/24
+```
+
+Isso dividirá o bloco `192.168.0.0/24` em 6 sub-redes menores e mostrará as informações para cada sub-rede.
+
+### Quando Usar o ipcalc?
+
+- **Planejamento e Design de Redes**: Quando você precisa planejar a estrutura de uma rede, incluindo sub-redes para diferentes segmentos ou departamentos.
+- **Administração de Redes**: Para configurar e verificar configurações de rede em roteadores, switches, firewalls e outros dispositivos de rede.
+- **Educação e Treinamento**: Para entender melhor como funciona o endereçamento IP e a divisão de sub-redes.
+- **Scripting e Automação**: Quando se precisa de uma ferramenta para integrar em scripts de administração de sistema que automatizam o gerenciamento de rede.
+
+### Como Instalar o ipcalc
+
+Você pode instalar o `ipcalc` em distribuições Linux comuns usando os seguintes comandos:
+
+- **Debian/Ubuntu**:
+
+  ```bash
+  sudo apt-get install ipcalc
+  ```
+
+- **CentOS/Fedora**:
+
+  ```bash
+  sudo yum install ipcalc
+  ```
+
+ou 
+
+```bash
+  sudo dnf install ipcalc
+  ```
+
+O `ipcalc` é uma ferramenta poderosa para administradores de rede e engenheiros que precisam de cálculos rápidos e precisos de sub-redes e endereços IP. Se precisar de mais informações sobre como utilizá-lo ou sobre conceitos de redes, sinta-se à vontade para perguntar!
+
+____________________
+
+
+
+
